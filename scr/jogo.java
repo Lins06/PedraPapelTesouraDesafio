@@ -7,6 +7,7 @@ public class jogo {
     public static void main(String[] args) {
         
         int EscolhaP1 = Player1();
+        limparConsole();
         int EscolhaP2 = Player2();
         ValidarVencedor(EscolhaP1, EscolhaP2);
         }
@@ -65,6 +66,12 @@ public class jogo {
     }
 
 
+    }
+
+    public static void limparConsole() {
+        for (int i = 0; i < 50; i++) {
+            System.out.println();
+        }
     }
 
 }
